@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        body {
+            background-image: url("smoking.jpg");
+            height: 100vh;
+            background-size: cover;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        
+        }
+        nav ul {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgba(0,0,0,0.6);
+        }
+        nav li {
+            float: left;
+            list-style: none;
+        }
+        nav li a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav li a:hover {
+            background-color: #126C66;
+        }
+        .gallery {
+            display: inline-block;
+            margin: 50px;
+            text-align: center;
+            text-decoration: none;
+
+        }
+        .gallery img {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        .description {
+            color: white;
+            font-weight: bold;
+            margin-top: 5px;
+            text-decoration: none;
+        }
+        .rating {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+.rating input[type="radio"] {
+  display: none;
+}
+
+.rating label.star {
+  font-size: 24px;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.rating label.star:hover, .rating label.star:hover ~ label.star {
+  color: #f2c464;
+}
+
+.rating input[type="radio"]:checked ~ label.star {
+  color: #ccc;
+}
+
+.rating input[type="radio"]:checked + label.star, .rating input[type="radio"]:checked + label.star ~ label.star {
+  color: #f2c464;
+}
+ul li ul.dropdown li {
+    display: block;
+}
+ul li ul.dropdown {
+    width: 100%;
+    background: none;
+    position: absolute;
+    z-index: 999;
+    display: none;
+
+}
+ul li a:hover {
+    
+    background: #126C66;
+
+}
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="etongani.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="galery1.html">Order</a>
+            <ul class="dropdown">
+        <li><a href="ADDONZ.html">ADDONZ</a></li>
+         <li><a href="pastrie.html">PASTRIE</a></li>
+        <li><a href="#">PICA</a></li>
+         
+    </ul>
+            </li>
+
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="register.html">Join Us!</a></li>
+        </ul>
+    </nav>
+
+    <section><center>
+        <div class="gallery">
+            <a target="_blank" href="images/cake1.jpeg">
+                <img src="images/cake1.jpeg" alt="cake1" width="200" height="200">
+                <div class="description" >cakeshit</div>
+                </a>
+                <button>Add</button>
+        
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="images/cake2.jpeg">
+                <img src="images/cake2.jpeg" alt="Latte" width="200" height="200">
+                <div class="description">cake2</div>
+                <button>Add</button>
+            </a>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="images/cookie.jpeg">
+                <img src="images/cookie.jpeg" alt="cookie" width="200" height="200">
+                <div class="description">cookie</div>
+                <button>Add</button>
+            </a>
+        </div>
+
+       <div class="gallery">
+            <a target="_blank" href="images/tiramisu.jpeg">
+                <img src="images/tiramisu.jpeg" alt="tiramisu" width="200" height="200">
+                <div class="description">tiramisu</div>
+                <button>Add</button>
+            </a>
+        </div>
+
+       </center>
+    </section>
+
+</body>
+</html>
